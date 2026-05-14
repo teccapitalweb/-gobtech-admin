@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto · GobTech MX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+  .contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .contacto-info h2 {
+    margin-bottom: 24px;
+  }
+  .contacto-info p {
+    color: var(--muted);
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+  .info-item {
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .info-item:last-child { border-bottom: none; }
+  .info-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--bg-alt);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .info-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .info-value {
+    font-family: var(--font-display);
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .info-value a { color: var(--ink); }
+  .info-value a:hover { color: var(--accent); }
+
+  @media (max-width: 880px) {
+    .contacto-grid { grid-template-columns: 1fr; gap: 48px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand"><span class="brand__mark">G</span>GobTech <span style="color: var(--gold); font-style: italic;">MX</span></a>
+    <ul class="nav__links">
+      <li><a href="modulos.html">Módulos</a></li>
+      <li><a href="planes.html">Planes</a></li>
+      <li><a href="../gobtech-admin/index.html">Demo panel</a></li>
+      <li><a href="contacto.html" style="color: var(--accent);">Contacto</a></li>
+    </ul>
+    <div class="nav__cta"><a href="contacto.html" class="btn btn--primary">Agendar demo</a></div>
+    <button class="nav__toggle" aria-label="Menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div>
+</nav>
+
+<section class="section" style="padding-top: 80px;">
+  <div class="container">
+    <div class="contacto-grid">
+
+      <div class="contacto-info">
+        <span class="eyebrow">Hablemos</span>
+        <h2 class="display" style="font-size: clamp(2rem, 4vw, 3rem); margin-top: 20px;">Te contactamos en menos de <em style="font-style: italic; color: var(--accent); font-family: var(--font-display);">24 horas.</em></h2>
+        <p style="margin-top: 24px;">Cuéntanos un poco sobre tu municipio y los retos que enfrentan. Agendamos una demo de 45 minutos sin compromiso, donde te mostramos exactamente cómo se vería tu administración con GobTech.</p>
+
+        <div class="info-item">
+          <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div>
+            <div class="info-label">Correo</div>
+            <div class="info-value"><a href="mailto:ipcilinstituto@ipcil.org">ipcilinstituto@ipcil.org</a></div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <div class="info-label">WhatsApp directo</div>
+            <div class="info-value"><a href="https://wa.me/5212361074058">+52 1 236 107 4058</a></div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="info-label">Oficinas</div>
+            <div class="info-value">Tehuacán, Puebla, México</div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div>
+            <div class="info-label">Tiempo de respuesta</div>
+            <div class="info-value">Menos de 24 hrs hábiles</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3 class="h3" style="margin-bottom: 24px;">Solicita tu demo gratuita</h3>
+        <form id="contacto-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="cargo">Cargo *</label>
+              <select id="cargo" name="cargo" required>
+                <option value="">Selecciona…</option>
+                <option>Presidente Municipal</option>
+                <option>Secretario Particular</option>
+                <option>Oficial Mayor</option>
+                <option>Regidor de Tecnología</option>
+                <option>Director de Desarrollo</option>
+                <option>Director Administrativo</option>
+                <option>Tesorero Municipal</option>
+                <option>Otro funcionario</option>
+                <option>Asesor / Consultor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="municipio">Municipio *</label>
+              <input type="text" id="municipio" name="municipio" placeholder="Ej. Tehuacán" required>
+            </div>
+            <div class="form-group">
+              <label for="estado">Estado *</label>
+              <select id="estado" name="estado" required>
+                <option value="">Selecciona…</option>
+                <option>Aguascalientes</option><option>Baja California</option><option>Baja California Sur</option><option>Campeche</option><option>Chiapas</option><option>Chihuahua</option><option>Ciudad de México</option><option>Coahuila</option><option>Colima</option><option>Durango</option><option>Estado de México</option><option>Guanajuato</option><option>Guerrero</option><option>Hidalgo</option><option>Jalisco</option><option>Michoacán</option><option>Morelos</option><option>Nayarit</option><option>Nuevo León</option><option>Oaxaca</option><option>Puebla</option><option>Querétaro</option><option>Quintana Roo</option><option>San Luis Potosí</option><option>Sinaloa</option><option>Sonora</option><option>Tabasco</option><option>Tamaulipas</option><option>Tlaxcala</option><option>Veracruz</option><option>Yucatán</option><option>Zacatecas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo institucional *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">WhatsApp *</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+52 ..." required>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="interes">¿Qué te interesa más? *</label>
+              <select id="interes" name="interes" required>
+                <option value="">Selecciona…</option>
+                <option>Plan Básico (3 módulos)</option>
+                <option>Plan Pro (7 módulos)</option>
+                <option>Plan Smart City (12 módulos)</option>
+                <option>Sólo quiero conocer la plataforma</option>
+                <option>Tengo un proyecto específico</option>
+              </select>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="mensaje">Cuéntanos sobre tu municipio (opcional)</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Tamaño aproximado, principales retos, fechas tentativas…"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Enviar solicitud</button>
+          <p class="small" style="margin-top: 16px; text-align: center;">Tu información está protegida y no será compartida con terceros.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">GobTech <em style="color: var(--gold-soft); font-style: italic;">MX</em></div>
+        <p style="max-width: 320px; font-size: 14px;">La plataforma operativa para gobiernos municipales de México. Desarrollada en Tehuacán, Puebla por TEC CAPITAL Group.</p>
+      </div>
+      <div class="footer__col"><h5>Producto</h5><ul><li><a href="modulos.html">12 Módulos</a></li><li><a href="planes.html">Planes</a></li><li><a href="../gobtech-admin/index.html">Demo panel</a></li></ul></div>
+      <div class="footer__col"><h5>Empresa</h5><ul><li><a href="contacto.html">Contacto</a></li><li><a href="#">Casos de éxito</a></li><li><a href="#">Aviso de privacidad</a></li></ul></div>
+      <div class="footer__col"><h5>Contacto</h5><ul><li><a href="mailto:ipcilinstituto@ipcil.org">ipcilinstituto@ipcil.org</a></li><li><a href="https://wa.me/5212361074058">+52 1 236 107 4058</a></li><li>Tehuacán, Puebla</li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <div>© <span id="year">2026</span> TEC CAPITAL Group. Todos los derechos reservados.</div>
+      <div>Hecho con orgullo en México 🇲🇽</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5212361074058?text=Hola%2C%20me%20interesa%20conocer%20GobTech%20MX" target="_blank" class="wa-float" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.535 5.874L0 24l6.29-1.508A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.058-1.4l-.361-.214-3.735.896.944-3.653-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

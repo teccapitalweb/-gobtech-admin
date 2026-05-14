@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planes · GobTech MX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin-top: 48px;
+  }
+  .compare-table th, .compare-table td {
+    padding: 18px 24px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+  }
+  .compare-table th {
+    background: var(--bg-alt);
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .compare-table th:not(:first-child) { text-align: center; }
+  .compare-table td:not(:first-child) { text-align: center; color: var(--accent); font-weight: 500; }
+  .compare-table tbody tr:last-child td { border-bottom: none; }
+  .compare-table tbody tr:hover { background: var(--bg); }
+  .check { color: var(--success); font-size: 18px; }
+  .cross { color: var(--line); font-size: 18px; }
+  .featured-col { background: linear-gradient(180deg, rgba(30, 58, 95, 0.04) 0%, transparent 100%); }
+
+  .faq {
+    margin-top: 80px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .faq__item {
+    border-bottom: 1px solid var(--line);
+    padding: 24px 0;
+  }
+  .faq__q {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__q::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--gold);
+    transition: transform 0.2s ease;
+  }
+  .faq__item[open] .faq__q::after { transform: rotate(45deg); }
+  .faq__a {
+    margin-top: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  @media (max-width: 760px) {
+    .compare-table { font-size: 12px; display: block; overflow-x: auto; }
+    .compare-table th, .compare-table td { padding: 12px 14px; min-width: 140px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand"><span class="brand__mark">G</span>GobTech <span style="color: var(--gold); font-style: italic;">MX</span></a>
+    <ul class="nav__links">
+      <li><a href="modulos.html">Módulos</a></li>
+      <li><a href="planes.html" style="color: var(--accent);">Planes</a></li>
+      <li><a href="../gobtech-admin/index.html">Demo panel</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav__cta"><a href="contacto.html" class="btn btn--primary">Agendar demo</a></div>
+    <button class="nav__toggle" aria-label="Menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div>
+</nav>
+
+<section class="section" style="padding-top: 80px;">
+  <div class="container" style="max-width: 880px; text-align: center;">
+    <span class="eyebrow">Inversión y planes</span>
+    <h1 class="display" style="font-size: clamp(2.5rem, 6vw, 4.5rem); margin: 20px 0;">
+      Un plan para <em style="font-style: italic; color: var(--accent); font-family: var(--font-display);">cada</em> municipio.
+    </h1>
+    <p class="lead" style="margin: 0 auto;">
+      Setup en menos de 30 días. Pagos en MXN. Sin contratos amañados.
+      Sin sorpresas en la facturación.
+    </p>
+  </div>
+</section>
+
+<section class="section section--alt" style="padding-top: 20px;">
+  <div class="container">
+    <div class="planes">
+
+      <div class="plan reveal">
+        <h3 class="plan__name">Básico</h3>
+        <p class="plan__desc">Municipios rurales · hasta 30K hab</p>
+        <div class="plan__price">$120K</div>
+        <div class="plan__period">MXN / anualidad + $80K setup</div>
+        <ul class="plan__features">
+          <li>3 módulos esenciales</li>
+          <li>Atención ciudadana georreferenciada</li>
+          <li>Trámites en línea con pago</li>
+          <li>Bot WhatsApp ciudadano</li>
+          <li>Hasta 5 usuarios admin</li>
+          <li>Capacitación inicial (4 hrs)</li>
+          <li>Soporte por correo</li>
+          <li>Actualizaciones mensuales</li>
+        </ul>
+        <a href="contacto.html" class="btn btn--ghost" style="width: 100%;">Cotizar plan Básico</a>
+      </div>
+
+      <div class="plan plan--featured reveal">
+        <div class="plan__badge">Más popular</div>
+        <h3 class="plan__name">Pro</h3>
+        <p class="plan__desc">Municipios medianos · 30K a 200K hab</p>
+        <div class="plan__price">$280K</div>
+        <div class="plan__period">MXN / anualidad + $180K setup</div>
+        <ul class="plan__features">
+          <li>7 módulos integrados</li>
+          <li>Todo lo de Básico</li>
+          <li>Dashboard ejecutivo del Presidente</li>
+          <li>Mapa público de obras</li>
+          <li>Transparencia automatizada (INAI)</li>
+          <li>Gestión interna de oficios</li>
+          <li>Hasta 25 usuarios admin</li>
+          <li>Capacitación extendida (16 hrs)</li>
+          <li>Soporte WhatsApp dedicado</li>
+        </ul>
+        <a href="contacto.html" class="btn btn--gold" style="width: 100%;">Cotizar plan Pro</a>
+      </div>
+
+      <div class="plan reveal">
+        <h3 class="plan__name">Smart City</h3>
+        <p class="plan__desc">Cabeceras metropolitanas · +200K hab</p>
+        <div class="plan__price">$600K</div>
+        <div class="plan__period">MXN / anualidad + $450K setup</div>
+        <ul class="plan__features">
+          <li>12 módulos completos</li>
+          <li>Todo lo de Pro</li>
+          <li>DIF y programas sociales</li>
+          <li>Agenda pública del Presidente</li>
+          <li>C5 con detección IA de cámaras</li>
+          <li>IA predictiva municipal</li>
+          <li>Gemelo digital 3D</li>
+          <li>Usuarios admin ilimitados</li>
+          <li>Capacitación in situ</li>
+          <li>Soporte 24/7 dedicado</li>
+          <li>Customer Success Manager</li>
+        </ul>
+        <a href="contacto.html" class="btn btn--ghost" style="width: 100%;">Cotizar Smart City</a>
+      </div>
+
+    </div>
+
+    <!-- Tabla comparativa -->
+    <div style="margin-top: 96px;">
+      <h2 class="h2" style="text-align: center; margin-bottom: 16px;">Comparativa detallada</h2>
+      <p class="lead" style="text-align: center; margin: 0 auto;">Todo lo que incluye cada plan, lado a lado.</p>
+
+      <div style="overflow-x: auto;">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Básico</th>
+              <th class="featured-col">Pro</th>
+              <th>Smart City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Atención ciudadana</td><td><span class="check">✓</span></td><td class="featured-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Trámites en línea</td><td><span class="check">✓</span></td><td class="featured-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Bot WhatsApp</td><td><span class="check">✓</span></td><td class="featured-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Dashboard ejecutivo</td><td><span class="cross">—</span></td><td class="featured-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Mapa de obras públicas</td><td><span class="cross">—</span></td><td class="featured-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Transparencia automatizada</td><td><span class="cross">—</span></td><td class="featured-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Gestión de oficios internos</td><td><span class="cross">—</span></td><td class="featured-col"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>DIF / programas sociales</td><td><span class="cross">—</span></td><td class="featured-col"><span class="cross">—</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Agenda pública</td><td><span class="cross">—</span></td><td class="featured-col"><span class="cross">—</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>C5 con IA de cámaras</td><td><span class="cross">—</span></td><td class="featured-col"><span class="cross">—</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>IA predictiva</td><td><span class="cross">—</span></td><td class="featured-col"><span class="cross">—</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Gemelo digital 3D</td><td><span class="cross">—</span></td><td class="featured-col"><span class="cross">—</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Usuarios administrativos</td><td>5</td><td class="featured-col">25</td><td>Ilimitados</td></tr>
+            <tr><td>Capacitación inicial</td><td>4 hrs</td><td class="featured-col">16 hrs</td><td>In situ</td></tr>
+            <tr><td>Soporte</td><td>Correo</td><td class="featured-col">WhatsApp</td><td>24/7 dedicado</td></tr>
+            <tr><td>Customer Success Manager</td><td><span class="cross">—</span></td><td class="featured-col"><span class="cross">—</span></td><td><span class="check">✓</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq">
+      <h2 class="h2" style="text-align: center; margin-bottom: 16px;">Preguntas frecuentes</h2>
+
+      <details class="faq__item" open>
+        <summary class="faq__q">¿Cómo se factura? ¿Estamos en padrón de proveedores?</summary>
+        <div class="faq__a">Facturamos con CFDI 4.0 vigente. TEC CAPITAL Group está dado de alta y registrado en padrones de proveedores municipales y estatales de Puebla. Si tu municipio está en otro estado, gestionamos el alta sin costo.</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">¿Qué pasa al final del año contratado?</summary>
+        <div class="faq__a">Renuevas la anualidad o suspendes el servicio sin penalización. Si suspendes, te entregamos todos los datos de tu municipio en formato exportable. No hay candados ni rescates.</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">¿Cuánto tarda la implementación?</summary>
+        <div class="faq__a">Básico: 15 días. Pro: 30 días. Smart City: 45-60 días. Incluye configuración, importación de datos existentes y capacitación.</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">¿La plataforma cumple con la Ley de Protección de Datos?</summary>
+        <div class="faq__a">Sí. Cumplimos con la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados. Datos hospedados en infraestructura Google Cloud / Firebase con cifrado en tránsito y en reposo.</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">¿Qué pasa cuando cambie la administración?</summary>
+        <div class="faq__a">El sistema es propiedad del municipio, no de la administración entrante. La transición es uno de los puntos fuertes — la nueva administración hereda un sistema modernizado y operativo desde el día 1.</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">¿Pueden personalizar el logotipo y colores institucionales?</summary>
+        <div class="faq__a">Sí. Todos los planes incluyen branding del municipio: logotipo, colores institucionales, dominio personalizado (ej. `gobtech.tu-municipio.gob.mx`). El sistema se siente propio.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <h2 class="display" style="font-size: clamp(2rem, 5vw, 3.5rem);">¿Listo para <em style="font-style: italic; color: var(--accent); font-family: var(--font-display);">cotizar</em>?</h2>
+    <p class="lead" style="margin: 24px auto 40px;">Te enviamos propuesta formal por correo en menos de 24 horas hábiles.</p>
+    <div class="cta-final__actions">
+      <a href="contacto.html" class="btn btn--primary btn--lg">Pedir cotización</a>
+      <a href="../gobtech-admin/index.html" class="btn btn--ghost btn--lg">Ver demo del panel</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">GobTech <em style="color: var(--gold-soft); font-style: italic;">MX</em></div>
+        <p style="max-width: 320px; font-size: 14px;">La plataforma operativa para gobiernos municipales de México. Desarrollada en Tehuacán, Puebla por TEC CAPITAL Group.</p>
+      </div>
+      <div class="footer__col"><h5>Producto</h5><ul><li><a href="modulos.html">12 Módulos</a></li><li><a href="planes.html">Planes</a></li><li><a href="../gobtech-admin/index.html">Demo panel</a></li></ul></div>
+      <div class="footer__col"><h5>Empresa</h5><ul><li><a href="contacto.html">Contacto</a></li><li><a href="#">Casos de éxito</a></li><li><a href="#">Aviso de privacidad</a></li></ul></div>
+      <div class="footer__col"><h5>Contacto</h5><ul><li><a href="mailto:ipcilinstituto@ipcil.org">ipcilinstituto@ipcil.org</a></li><li><a href="https://wa.me/5212361074058">+52 1 236 107 4058</a></li><li>Tehuacán, Puebla</li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <div>© <span id="year">2026</span> TEC CAPITAL Group. Todos los derechos reservados.</div>
+      <div>Hecho con orgullo en México 🇲🇽</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5212361074058?text=Hola%2C%20me%20interesa%20conocer%20GobTech%20MX" target="_blank" class="wa-float" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.535 5.874L0 24l6.29-1.508A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.058-1.4l-.361-.214-3.735.896.944-3.653-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

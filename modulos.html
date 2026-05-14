@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12 Módulos · GobTech MX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand"><span class="brand__mark">G</span>GobTech <span style="color: var(--gold); font-style: italic;">MX</span></a>
+    <ul class="nav__links">
+      <li><a href="modulos.html" style="color: var(--accent);">Módulos</a></li>
+      <li><a href="planes.html">Planes</a></li>
+      <li><a href="../gobtech-admin/index.html">Demo panel</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav__cta"><a href="contacto.html" class="btn btn--primary">Agendar demo</a></div>
+    <button class="nav__toggle" aria-label="Menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div>
+</nav>
+
+<section class="section" style="padding-top: 80px;">
+  <div class="container" style="max-width: 880px; text-align: center;">
+    <span class="eyebrow">Catálogo completo</span>
+    <h1 class="display" style="font-size: clamp(2.5rem, 6vw, 4.5rem); margin: 20px 0;">
+      12 módulos. <em style="font-style: italic; color: var(--accent); font-family: var(--font-display);">Una sola plataforma.</em>
+    </h1>
+    <p class="lead" style="margin: 0 auto;">
+      Cada módulo está diseñado para resolver un dolor específico de tu municipio.
+      Actívalos según tu plan — o combínalos todos en Smart City.
+    </p>
+  </div>
+</section>
+
+<section class="section section--alt" style="padding-top: 40px;">
+  <div class="container">
+    <div class="modulos-grid">
+
+      <div class="modulo reveal">
+        <div class="modulo__num">01 · ESENCIAL</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3 class="modulo__title">Atención ciudadana georreferenciada</h3>
+        <p class="modulo__desc">App + web donde el ciudadano reporta baches, fugas, alumbrado caído, basura, ruido con foto y GPS. Asignación automática a la dirección responsable con folio y seguimiento por WhatsApp.</p>
+        <div class="modulo__tags"><span class="tag">Foto + GPS</span><span class="tag">Mapa en vivo</span><span class="tag">Asignación auto</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">02 · ESENCIAL</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+        <h3 class="modulo__title">Trámites en línea con pago</h3>
+        <p class="modulo__desc">Predial, actas, constancias, licencias, permisos de construcción. Pago con tarjeta o transferencia y descarga del documento PDF con QR verificable contra Firestore.</p>
+        <div class="modulo__tags"><span class="tag">Stripe</span><span class="tag">MercadoPago</span><span class="tag">PDF + QR</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">03 · PRO</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></div>
+        <h3 class="modulo__title">Dashboard ejecutivo del presidente</h3>
+        <p class="modulo__desc">Una pantalla, todo el municipio. KPIs en tiempo real, mapa de reportes, recaudación del día, obras en curso, alertas de seguridad, agenda. El presi entiende todo en 30 segundos.</p>
+        <div class="modulo__tags"><span class="tag tag--gold">Tiempo real</span><span class="tag">Multi-pantalla</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">04 · ESENCIAL</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3 class="modulo__title">Bot ciudadano por WhatsApp</h3>
+        <p class="modulo__desc">Atención 24/7 con inteligencia artificial. Levanta reportes, consulta estado de folios, responde dudas frecuentes de trámites. Conectado a tu cuenta WATI o WhatsApp Cloud.</p>
+        <div class="modulo__tags"><span class="tag">IA conversacional</span><span class="tag">24/7</span><span class="tag">WATI</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">05 · PRO</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <h3 class="modulo__title">Transparencia automatizada</h3>
+        <p class="modulo__desc">Contratos, nóminas, viáticos, padrón de proveedores se publican automático en el portal público. Cumples obligaciones del INAI y de la Plataforma Nacional sin trabajo manual.</p>
+        <div class="modulo__tags"><span class="tag">INAI</span><span class="tag">PNT</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">06 · PRO</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 2"/></svg></div>
+        <h3 class="modulo__title">Gestión interna de oficios</h3>
+        <p class="modulo__desc">Reemplaza el papeleo entre direcciones. Trazabilidad completa: quién envió, quién recibió, quién leyó, quién respondió. Firma electrónica e historial inmutable.</p>
+        <div class="modulo__tags"><span class="tag">Sin papel</span><span class="tag">Firma electrónica</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">07 · PRO</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3 class="modulo__title">Mapa de obras públicas</h3>
+        <p class="modulo__desc">Mapa interactivo con cada obra georreferenciada: presupuesto, contratista, % de avance, fechas. Disponible público para la ciudadanía. Marketing y transparencia en uno.</p>
+        <div class="modulo__tags"><span class="tag">Mapa público</span><span class="tag">Marketing</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">08 · PRO</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <h3 class="modulo__title">Agenda pública del presidente</h3>
+        <p class="modulo__desc">Calendario público de actividades, giras, audiencias, eventos. Los ciudadanos pueden solicitar audiencias directo desde la app. Marketing automático de gestión.</p>
+        <div class="modulo__tags"><span class="tag">Pública</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">09 · PRO</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg></div>
+        <h3 class="modulo__title">DIF y programas sociales</h3>
+        <p class="modulo__desc">Padrón único de beneficiarios, control de entregas (despensas, becas, apoyos), detección automática de duplicados y desvíos. Evita auditorías y problemas con la prensa.</p>
+        <div class="modulo__tags"><span class="tag">Padrón único</span><span class="tag">Antifraude</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">10 · SMART CITY</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3 class="modulo__title">C5 con IA de cámaras</h3>
+        <p class="modulo__desc">Las cámaras municipales detectan automáticamente riñas, accidentes, autos abandonados, aglomeraciones. Alerta inmediata a policía o protección civil sin operador humano.</p>
+        <div class="modulo__tags"><span class="tag tag--gold">Visión IA</span><span class="tag">Alertas</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">11 · SMART CITY</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6m0 12v-6M4.93 4.93l4.24 4.24m5.66 5.66l4.24 4.24M2 12h6m12 0h-6M4.93 19.07l4.24-4.24m5.66-5.66l4.24-4.24"/></svg></div>
+        <h3 class="modulo__title">IA predictiva municipal</h3>
+        <p class="modulo__desc">Predice zonas de riesgo de inundación según el clima. Predice quién pagará el predial y quién no para focalizar campañas. Sugiere ubicaciones óptimas de nuevas obras.</p>
+        <div class="modulo__tags"><span class="tag tag--gold">Machine learning</span></div>
+      </div>
+
+      <div class="modulo reveal">
+        <div class="modulo__num">12 · SMART CITY</div>
+        <div class="modulo__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <h3 class="modulo__title">Gemelo digital 3D del municipio</h3>
+        <p class="modulo__desc">Maqueta 3D interactiva de toda la ciudad en navegador. Cada calle, obra, reporte y servicio público en tiempo real. Tipo videojuego, pero es tu municipio real.</p>
+        <div class="modulo__tags"><span class="tag tag--gold">3D interactivo</span><span class="tag">WebGL</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <h2 class="display" style="font-size: clamp(2rem, 5vw, 3.5rem);">¿Qué módulos necesita <em style="font-style: italic; color: var(--accent); font-family: var(--font-display);">tu</em> municipio?</h2>
+    <p class="lead" style="margin: 24px auto 40px;">Agenda 45 minutos con nosotros. Analizamos tus dolores actuales y armamos un paquete a medida — sin venta de humo.</p>
+    <div class="cta-final__actions">
+      <a href="contacto.html" class="btn btn--primary btn--lg">Agendar diagnóstico gratis</a>
+      <a href="planes.html" class="btn btn--ghost btn--lg">Comparar planes</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">GobTech <em style="color: var(--gold-soft); font-style: italic;">MX</em></div>
+        <p style="max-width: 320px; font-size: 14px;">La plataforma operativa para gobiernos municipales de México. Desarrollada en Tehuacán, Puebla por TEC CAPITAL Group.</p>
+      </div>
+      <div class="footer__col"><h5>Producto</h5><ul><li><a href="modulos.html">12 Módulos</a></li><li><a href="planes.html">Planes</a></li><li><a href="../gobtech-admin/index.html">Demo panel</a></li></ul></div>
+      <div class="footer__col"><h5>Empresa</h5><ul><li><a href="contacto.html">Contacto</a></li><li><a href="#">Casos de éxito</a></li><li><a href="#">Aviso de privacidad</a></li></ul></div>
+      <div class="footer__col"><h5>Contacto</h5><ul><li><a href="mailto:ipcilinstituto@ipcil.org">ipcilinstituto@ipcil.org</a></li><li><a href="https://wa.me/5212361074058">+52 1 236 107 4058</a></li><li>Tehuacán, Puebla</li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <div>© <span id="year">2026</span> TEC CAPITAL Group. Todos los derechos reservados.</div>
+      <div>Hecho con orgullo en México 🇲🇽</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5212361074058?text=Hola%2C%20me%20interesa%20conocer%20GobTech%20MX" target="_blank" class="wa-float" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.535 5.874L0 24l6.29-1.508A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.058-1.4l-.361-.214-3.735.896.944-3.653-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
